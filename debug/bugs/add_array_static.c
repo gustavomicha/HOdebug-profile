@@ -3,6 +3,7 @@
 int add_array(int *a, int *b, int n){
   int sum = 0;
   int i = 0;
+  // el problema es que va hasta a[4] y no estan definidos desde 3
   for (i = 0; i <= n + 1; i++) {
     sum += abs(a[i]);
     sum += abs(b[i]);
