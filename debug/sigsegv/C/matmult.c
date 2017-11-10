@@ -57,4 +57,8 @@ int main(int argc, char * argv[]){
 
   return 0;
 }
-  
+
+//la solucion es malloquear todo, asi paso del stack (de 8mb, propio de cada funcion) al hip (dinamico).
+// faltaba temp!
+//si no hubiera tardado mucho (o sea si usaba poca memoria, como en small), no me daba cuenta que estaba saliendo del stack!
+// conclusion: por las dudas siempre es mejor usar malloc  
